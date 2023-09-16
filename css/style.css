@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "shabnam";
+  src: url("../fonts/Shabnam-FD.woff2") format("woff2");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "shabnam", sans-serif;
+  background-color: #e0e0e0;
+}
+
+.container {
+  width: 1260px;
+  margin: 56px auto;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.course {
+  width: 100%;
+
+  background: radial-gradient(
+    circle,
+    rgba(17, 25, 44, 1) 0%,
+    rgba(32, 65, 104, 1) 100%
+  );
+
+  border-radius: 15px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 400ms ease-in;
+}
+.course:hover {
+background: linear-gradient(134deg, rgba(31,24,57,1) 3%, rgba(40,41,156,0.6089286056219363) 100%);
+
+}
+.course--image {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.course--teacher {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 60px;
+  z-index: 2;
+}
+.course--teacher__image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.course--teacher__name {
+  color: #fff;
+  font-weight: 600;
+}
+.course--image__course {
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 38px;
+  object-fit: cover;
+}
+
+.course--info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.course--content {
+  margin-top: -5px;
+}
+.course--content__title {
+  color: #fff;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.course--price__title {
+  color: #fff;
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.course--price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.course--info__like {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3px;
+}
+
+.course--info__icon {
+  width: 17px;
+  height: 17px;
+  color: #d50000;
+}
